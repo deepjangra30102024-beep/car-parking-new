@@ -117,6 +117,11 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <i class="fa-solid fa-clock-rotate-left"></i> Parking Logs
             </a>
         </li>
+        <li class="nav-item">
+            <a href="change_password.php" class="nav-link <?= $currentPage === 'change_password.php' ? 'active' : '' ?>">
+                <i class="fa-solid fa-key"></i> Change Password
+            </a>
+        </li>
         <li class="nav-item mt-4">
             <a href="logout.php" class="nav-link text-danger">
                 <i class="fa-solid fa-right-from-bracket"></i> Logout (<?= htmlspecialchars($_SESSION['admin_user']) ?>)
